@@ -25,6 +25,8 @@ function checkPrereqs() {
 checkPrereqs
 replacePrivateKey
 
+rm -rf ../application/wallet/*
+
 docker-compose -f docker-compose.yml down
 
 docker-compose -f docker-compose.yml up -d ca.example.com orderer.example.com couchdb1 couchdb2 couchdb3 peer0.org1.example.com  peer0.org2.example.com peer0.org3.example.com cli
