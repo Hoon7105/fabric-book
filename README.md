@@ -3,7 +3,7 @@
 ## 네트워크 구동
 ```
 .../book/network$ ./generate.sh
-.../book/network$ ./network.sh
+.../book/network$ ./start.sh
 ```
 
 ---
