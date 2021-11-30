@@ -33,4 +33,4 @@ $ .../book/application$ node server.js
 ```
 > 웹브라우저 실행
 
-[로컬 환경에서 실행하는 경우 클릭하세요](localhost:8070)
+[로컬 환경에서 실행하는 경우 클릭하세요](http://localhost:8070)
