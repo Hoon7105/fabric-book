@@ -33,7 +33,7 @@ app.get('/curator', (req, res)=>{
     const bookList = require(process.cwd() + "/data/BookRecList");
     
 
-    // json생성 query all books -> random or 고르든 지지고 볶아(아마 유저의 책 선정 말씀하신 것 같아요)
+
 //변수로 책 제목들 지정 후 추천 가능한지 확인
 var parseData = JSON.parse(JSON.stringify(bookList));
   const index = Math.floor(Math.random() * parseData.length);
@@ -97,7 +97,6 @@ app.post('/readbook', async(req, res)=>{
     const cat = req.body.cat;
 
     console.log("add read book isbn: " + isbn);
-    //console.log("add read book title: " + name); //이거 name 중복에 title 주제 = cat 카테고리 랑 같아서 바꿔야할거같습니다 
     console.log("add read book name: " + name);
     console.log("add read book cat: " + cat);
 
